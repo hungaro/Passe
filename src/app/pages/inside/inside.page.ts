@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class InsidePage implements OnInit {
 
-user = 'Fernando';
+user;
 saldo = '50,00'
 saldoReal;
 saldoCents;

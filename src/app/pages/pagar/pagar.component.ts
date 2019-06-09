@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class PagarComponent implements OnInit {
 
-  user="Fernando";
+  user;
   constructor(
     private qrScanner: QRScanner,
     private router: Router

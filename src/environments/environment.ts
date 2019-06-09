@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url: 'https://cors-anywhere.herokuapp.com/https://ucardapi.herokuapp.com',
+  url: 'https://cors-anywhere.herokuapp.com/http://api.olhovivo.sptrans.com.br/v2.1',
 };
 
 
