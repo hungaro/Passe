@@ -1,0 +1,54 @@
+<ion-header >
+  <ion-toolbar color="secondary">
+    <ion-buttons color="dark" slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">
+        Bem vindo, <b>{{ user }}</b>
+    </ion-title>
+   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <div class="color-secondary">
+      <ion-grid color="secondary">
+          <ion-row>
+              <ion-col size="12">
+                  <ion-searchbar color="light" placeholder="Busque um destino"></ion-searchbar>  
+                </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col size="7" >
+                  <ion-text>Voce possui</ion-text><br>
+                  <ion-text >
+                    <small>R$</small>
+                    <span class="saldoReal">{{ saldoReal[0] }},<small class="saldoCents">{{ saldoCents}}</small></span>
+                  </ion-text>
+                </ion-col>
+                <ion-col size="5" class="ion-text-right">
+                    <small class="buy"><a><u>Comprar Créditos</u></a></small>
+                </ion-col>
+          </ion-row>
+        </ion-grid>
+  </div>
+    
+  <app-here-map style="z-index: 1001" appId="HWNgkWXLMQVQcNjLmehg" appCode="sLqoDOO4km3AQcBhSk0fHg" lat="37.7397" lng="-121.4252"></app-here-map>
+
+  <ion-button class="pagar" color="secondary" (click)="pagar()">
+    <ion-grid>
+        <ion-row>
+            <ion-col size=12>
+                <img class="qrCode" src="../../../assets/img/qrCode.png">
+            </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col size=12>
+                  <ion-text color="dark">PAGAR</ion-text>
+                </ion-col>
+            </ion-row>
+    </ion-grid>
+  
+  </ion-button>
+  
+  </ion-content>

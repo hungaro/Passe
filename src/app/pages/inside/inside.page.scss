@@ -1,0 +1,116 @@
+.float-right {
+    float: right
+}
+ion-icon {
+    font-size: 25px;
+    position: relative;
+    top: -5px;
+    left: 5px;
+  }
+
+  ion-card { 
+    --border-radius: 90px! important; 
+    --border-color: red
+    }
+
+ion-avatar img{
+    top: -20px;
+}
+
+.foto-perfil {
+    background: url("./../../../assets/img/sem-foto.jpg") 50% 50% no-repeat;
+    background-size: 100%;
+    height: 5rem;
+    position: relative
+}
+
+ion-avatar {
+    height: 6rem;
+    width: 6rem;
+    margin: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border: 2px white solid;
+    z-index: 1001;
+}
+
+.nome-perfil {
+    height: 6rem;
+    background: rgb(228, 228, 228); 
+    position: relative;
+}
+
+ion-title{
+    position: absolute;
+    top: 55%;
+    font-size: 0.8rem;
+    padding: 0px !important;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    font-size: 0.6rem;
+    text-align: center;
+    color: #6c757d !important;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+ion-input{
+    --background: #f4f5f8;
+}
+
+.color-secondary{
+    background: #FFDF00;
+  }
+
+.saldoReal{
+    font-size: 3rem;
+    padding-left: 1rem;
+    font-weight: 700
+}
+
+.saldoCents{
+    font-size: 0.8rem;
+    font-weight: 700
+}
+
+ion-row{
+    position: relative;
+}
+
+.buy{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+ion-content{
+    position: relative;
+    background: transparent;
+}
+  
+.pagar{
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+   height: 110px;
+}
+
+ion-menu-button{
+    color: black;
+}

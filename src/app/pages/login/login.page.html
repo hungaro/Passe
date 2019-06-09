@@ -1,0 +1,143 @@
+
+
+<div id="wrapper" class="back">
+<ion-header translucent="true">
+
+</ion-header>
+
+<ion-content  class="ion-padding">
+  <div id="header-30">
+      <ion-row class="padding-top-logo ion-justify-content-center">
+          LOGO
+      </ion-row>
+  </div>
+ 
+  <div *ngIf="!habilitar" id="content-50">
+  
+       
+  <ion-row class="ion-text-center ion-padding">
+    <ion-text color="light" >
+      <small>Por favor faça o login para iniciarmos sua viagem</small>
+     </ion-text>
+  </ion-row>
+      
+    <ion-grid class="ion-margin-top ion-padding-botton">
+      <ion-row>
+        <ion-col size="6">
+          <div>
+              <ion-button color="light" size="large"  (click)="btnLogar = !btnLogar; habilitar = !habilitar">
+                <ion-text  color="dark" class="ion-text-capitalize"><small>Fazer login</small></ion-text>
+              </ion-button>
+          </div>
+        </ion-col>
+        <ion-col size="6">
+          <div>
+              <ion-button size="large" type="button"  (click)="btnCadastrar = !btnCadastrar; habilitar = !habilitar">
+                <ion-text color="light" class="ion-text-capitalize"><small>Cadastro</small></ion-text>
+              </ion-button>          
+          </div>
+        </ion-col>
+      </ion-row>
+  
+    </ion-grid>
+
+   
+  </div>
+  
+<!-- </ion-content> -->
+
+
+
+
+<!-- <ion-content  class="ion-padding"> -->
+
+  <div *ngIf="btnCadastrar" id="content-60">
+  
+    <form [formGroup]="cadastroForm" (ngSubmit)="onSubmit()">
+
+      <ion-text color="light" class="ion-text-center"><h1>Cadastro</h1></ion-text>
+      
+      <ion-grid>
+        <ion-row>
+          <ion-input class="margin-top ion-padding-left" type="email" formControlName="email" placeholder="Nome"></ion-input>
+        </ion-row>
+  
+        <ion-row>
+         <ion-input class="margin-top ion-padding-left" type="email" formControlName="email" placeholder="Qual o seu email ?"></ion-input>
+        </ion-row>
+  
+        <ion-row>
+          <ion-input class="margin-top ion-padding-left" type="password" formControlName="password" placeholder="Senha"></ion-input>
+        </ion-row>
+  
+        <ion-row>
+          <ion-input class="margin-top ion-padding-left" type="password" formControlName="password" placeholder="Confirmar senha"></ion-input>
+        </ion-row>
+      </ion-grid>
+  
+      <ion-button class="ion-margin-top" expand="full" type="button" size="large" (click)="register()">
+          <ion-text  color="light" class="ion-text-capitalize">Pronto</ion-text>
+      </ion-button>
+  
+   
+    </form>
+ 
+</div>
+<!-- </ion-content> -->
+
+<!-- <ion-content class="ion-padding"> -->
+  <div  *ngIf="btnLogar" id="content-60">
+ 
+  <form class="" [formGroup]="credentialsForm" (ngSubmit)="onSubmit()">
+
+    <ion-text color="light" class="ion-text-center"><h1>Login</h1></ion-text>
+    
+    <ion-grid>
+      <ion-row>
+        <ion-input class="margin-top ion-padding-left" type="email" formControlName="email" placeholder="Insira seu email"></ion-input>
+      </ion-row>
+
+      <ion-row>
+       <ion-input class="margin-top ion-padding-left" type="password" formControlName="password" placeholder="Insira sua senha"></ion-input>
+      </ion-row>
+      
+    </ion-grid>
+
+    <ion-button class="ion-margin-top" expand="full" type="button" size="large" (click)="logar()">
+        <ion-text  color="light" class="ion-text-capitalize">Entrar</ion-text>
+    </ion-button>
+ 
+  </form>
+
+</div>
+
+<div id="footer-10" *ngIf="btnLogar || btnCadastrar">
+    <ion-row id="footer" class="ion-text-center" >
+      <ion-col  class="link-footer" >
+          <ion-text color="light">
+            <small>
+              <a class="ion-padding" (click)="voltar()">Voltar</a>
+                |  
+              <a class="ion-padding" (click)="voltar()">Esqueci minha senha</a>
+            </small>
+          </ion-text>
+      </ion-col>
+    </ion-row>
+</div>
+<div id="footer-20"  *ngIf="!habilitar">
+<ion-row  class="ion-text-center"  id="footer-content">
+  <ion-col class="">
+      <button class="icon-facebook"  ion-button full (click)='loginFacebook();'></button><br>
+      <ion-text color="light"><small>Acessar com Facebook</small></ion-text>
+  </ion-col>
+</ion-row>
+</div>
+ 
+</ion-content>
+
+
+
+
+
+</div>
+

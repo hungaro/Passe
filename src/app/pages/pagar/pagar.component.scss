@@ -1,0 +1,80 @@
+ion-title{
+    position: absolute;
+    top: 55%;
+    font-size: 0.8rem;
+    padding: 0px !important;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+ion-menu-button{
+    color: black;
+}
+
+ion-content{
+    padding-left: 20px;
+    margin: 20px;
+}
+
+.modal-mock{
+    background: white;
+    margin: 20px;
+    height: 100%;
+}
+
+#close-scanner-button {
+    display: none;
+}
+
+html.qr-scanner-open {
+
+    ion-app,
+    ion-content {
+        height: 70px !important;
+    }
+
+    ion-content {
+        --overflow: hidden !important;
+        color: black;
+    }
+
+    ion-header,
+    ion-footer,
+    ion-content > *:not(#close-scanner-button) {
+        display: none;
+    }
+
+    #close-scanner-button {
+        display: block;
+    }
+}
+
+.bold{
+    font-weight: 700;
+}
+
+img{
+    padding-top: 20px;
+    max-width: 80%;
+}
+
+// ion-app.cameraView {
+//     background-size: 100% 100% !important;
+//     /* To show image border */
+//     background-image: ("dados: image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><defs><style>.a{fill:#fff;}</style></defs><rect class="a" width="20.455" height="2.273"/><rect class="a" width="20.455" height="2.273" transform="translate(0 20.455) rotate(-90)"/><g transform="translate(200 200) rotate(-180)"><rect class="a" width="20.455" height="2.273"/><rect class="a" width="20.455" height="2.273" transform="translate(0 20.455) rotate(-90)"/></g><g transform="translate(200 0) rotate(90)"><rect class="a" width="20.455" height="2.273"/><rect class="a" width="20.455" height="2.273" transform="translate(0 20.455) rotate(-90)"/></g><g transform="translate(0 200) rotate(-90)"><rect class="a" width="20.455" height="2.273"/><rect class="a" width="20.455" height="2.273" transform="translate(0 20.455) rotate(-90)"/></g></svg>") !important;
+// }
+
+h3{
+    color: black;
+}
+
+small{
+    color: black;
+}
+h5{
+    color: black;
+}
+span{
+    color:black;
+}

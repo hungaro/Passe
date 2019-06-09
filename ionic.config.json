@@ -1,5 +1,7 @@
 {
   "name": "uCard",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

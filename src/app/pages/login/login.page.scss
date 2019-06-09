@@ -1,0 +1,45 @@
+.icon-facebook { 
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url('../../../assets/img/facebook_icon.png') 50% 50% no-repeat;
+    background-size: 100%; 
+    
+    }
+
+.logo{
+    max-height:70px;
+    width: auto;
+    height: auto;
+}
+
+.padding-top-logo{
+    padding-top: 50px;
+}
+.margin-top-logo{
+    margin-top:100px;
+}
+
+ion-input{
+    --background: #f4f5f8;
+}
+.margin-top{
+    margin-top: 5px;
+}
+
+.back{ 
+   // max-height: 100%;
+    background: #FFD700	;
+    background-size: cover
+}
+ion-content{
+    --background: transparent;
+}
+a {
+    color: #f4f5f8;
+}
+
+.link-footer{
+    position: absolute;
+    top: 92%
+}

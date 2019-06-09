@@ -9,3 +9,65 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+    height: 100%;
+    font-size: 1rem;
+   
+    background-color: #FFDF00;
+  }
+
+  ion-title {
+    color: #262626;
+  }
+
+  #wrapper {
+    min-height: 100%;
+    height: auto !important;
+    margin-bottom: -50px; /* the bottom margin is the negative value of the footer's total height */
+  }
+  
+  #wrapper:after {
+    content: "";
+    display: block;
+    height: 50px; /* the footer's total height */
+  }
+
+  #header-30{
+    height: 30%;
+    max-height: 30%;
+  }
+  
+  #content-60 {
+    height: 60%;
+    max-height: 60%;
+  }
+  #content-50 {
+    height: 50%;
+    max-height: 50%;
+  }
+  
+  #footer-10 {
+    height: 10%;
+    max-height: 10%; /* the footer's total height */
+  }
+
+  #footer-20 {
+    height: 20%;
+    max-height: 20%; /* the footer's total height */
+  }
+  
+  #footer-content {
+    min-height: 32px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
+    padding: 0px;
+  }
+
+  .header-md:after{
+    background-image: none;
+}
+  
